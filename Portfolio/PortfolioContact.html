@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Ok Requirements for portfolio are:
+      - Home Page
+      - About Page
+      - Contact Page
+      - Resume Page/Download
+      - Courses Page
+      - Projects Page  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Home</title>
+    <link rel="icon" href="images/logos/Website Logo.jpg">
+    <link rel="stylesheet" href="palette.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">
+        <header class="headnav">
+            <div class="nav-logo">
+                <img src="images/logos/Website Logo.jpg" alt="website-logo">
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navdiv">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="PortfolioHome.html">Home</a></li>
+                        <li><a href="PortfolioAbout.html">About</a></li>
+                        <li><a href="PortfolioContact.html">Contact</a></li>
+                        <li><a href="PortfolioResume.html">Resume</a></li>
+                        <li><a href="PortfolioClasses.html">Classes</a></li>
+                        <li><a href="PortfolioProjects.html">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="mainchunk-contact">
+        <main>
+            <div class="contact-header">
+                <h1>
+                    Contact me!
+                </h1>
+            </div>
+            <div class="contact-form">
+                <form class="input-form" action="https://formspree.io/f/xyknvvpw" method="POST">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name">
+    
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+    
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="emailaddress" placeholder="Your email address">
+    
+                    <label for="message">Leave a message</label>
+                    <textarea id="message" name="message" placeholder="Leave a message..." style="height: 100px; font-family: Ubuntu;"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <div class="contacts">
+        <footer class="contact-footer">
+            <a href="mailto:alexwallace0812@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>alexwallace0812@gmail.com</span>
+            </a>
+            <a href="tel:+18602184645">
+                <i class="fa-solid fa-phone">
+                </i><span>860-218-4645</span>
+            </a>
+            <a href="https://github.com/alexwallace0812" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="https://www.linkedin.com/in/alexwallace0812/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        </footer>
+    </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navdiv = document.querySelector('.navdiv');
+    
+        hamburger.addEventListener('click', () => {
+            navdiv.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

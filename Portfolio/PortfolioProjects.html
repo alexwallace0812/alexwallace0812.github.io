@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio About</title>
+    <link rel="icon" href="images/logos/Website Logo.jpg">
+    <link rel="stylesheet" href="palette.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">
+        <header class="headnav">
+            <div class="nav-logo">
+                <img src="images/logos/Website Logo.jpg" alt="website-logo">
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navdiv">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="PortfolioHome.html">Home</a></li>
+                        <li><a href="PortfolioAbout.html">About</a></li>
+                        <li><a href="PortfolioContact.html">Contact</a></li>
+                        <li><a href="PortfolioResume.html">Resume</a></li>
+                        <li><a href="PortfolioClasses.html">Classes</a></li>
+                        <li><a href="PortfolioProjects.html">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div>
+        <main class="mainchunk-project">
+            <h1 style="padding: 50px; color: white;">
+                Projects
+            </h1>
+            <div class="project-site">
+                <div class="algosort">
+                    <div class="algo-image">
+                        <a href="https://github.com/Nathanial-Keatts/Algorithms-Project-1-The-sorting-one-" target="_blank">
+                            <img src="images/project-screenshots/algoProj.png">
+                        </a>
+                    </div>
+                    <div class="algo-des">
+                        <h3>
+                            Sorting Algorithms Project
+                        </h3>
+                        <p>
+                            Using a template class to implement different input
+                            arrays, different sorting algorithms were implemented
+                            in order to compare swaps, compares, and completion
+                            times to compare to the theoretical Big O times.
+                        </p>
+                    </div>
+                </div>
+                <div class="passwordaudit">
+                    <div class="password-image">
+                        <a href="files/Password-Audit-HW-1.pdf" target="_blank">
+                            <img src="images/project-screenshots/passwordProj.png">
+                        </a>
+                    </div>
+                    <div class="password-des">
+                        <h3>
+                            Password Auditing Project Using Hashcat
+                        </h3>
+                        <p>
+                            Using password cracking tools such as John the Ripper and Hashcat, I was able to learn about auditing passwords
+                            by creating dictionaries given a company's password policy and different personal statements from each
+                            user. This taught me how to think efficiently to get each password in order to get them fast enough.
+                        </p>
+                    </div>
+                </div>
+                <div class="osscheduling">
+                    <div class="os-image">
+                        <a href="https://github.com/alexwallace0812/OS-Scheduling-Project.git" target="_blank">
+                            <img src="images/project-screenshots/osScheduleProj.png">
+                        </a>
+                    </div>
+                    <div class="os-des">
+                        <h3>
+                            Operating Systems Scheduling Simulator
+                        </h3>
+                        <p>
+                            Programmed in C++, this project was an operating system
+                            scheduling simulator to compare four different algorithms:
+                            First Come First Serve, Priority First, Round
+                            Robin, and Shortest Run Time First
+                        </p>
+                    </div>
+                </div>
+                <div class="bofhomework">
+                    <div class="bof-image">
+                        <a href="files/BOFHw-AlexWallace.pdf" target="_blank">
+                            <img src="images/project-screenshots/reverse-shell.png">
+                        </a>
+                    </div>
+                    <div class="bof-des">
+                        <h3>
+                            Buffer Overflow: Reverse Shell Project
+                        </h3>
+                        <p>
+                            After learning about binary memory exploitation techniques such as a buffer overflow, we were given a 
+                            program vulnerable to this exploit. The requirement was to then use this program to create a buffer
+                            overflow payload to inject shellcode on the victim machine, connecting back to the attacker machine,
+                            bypassing the firewalls. This was a common reverse shell attack that companies must be aware of when
+                            setting policies for technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="contacts">
+        <footer class="contact-footer">
+            <a href="mailto:alexwallace0812@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>alexwallace0812@gmail.com</span>
+            </a>
+            <a href="tel:+18602184645">
+                <i class="fa-solid fa-phone">
+                </i><span>860-218-4645</span>
+            </a>
+            <a href="https://github.com/alexwallace0812" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="https://www.linkedin.com/in/alexwallace0812/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        </footer>
+    </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navdiv = document.querySelector('.navdiv');
+    
+        hamburger.addEventListener('click', () => {
+            navdiv.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
